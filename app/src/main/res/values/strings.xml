@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sign Up</string>
+    <string name="FName_Hint">First Name</string>
+    <string name="LName_Hint">Last Name</string>
+    <string name="Sign_Up">Sign Up</string>
+    <string name="Enter_Cred">Enter Your Details Below</string>
+    <string name="Email">Enter Email</string>
+    <string name="Password">Enter Password</string>
+    <string name="Login">Already have an account?</string>
+    <string name="Login_Text">Login</string>
+
+</resources>
