@@ -38,15 +38,13 @@ public class MainActivity extends AppCompatActivity {
             ModelUser modelUser=new ModelUser(f_name,l_name,mail,password);
             sharedPref.saveData(modelUser);
             Toast.makeText(MainActivity.this,"Data saved"  ,Toast.LENGTH_SHORT).show();
+            Intent intent =new Intent(MainActivity.this,LoginActivity.class);
+            startActivity(intent);
         });
        login_Btn.setOnClickListener(view -> {
 
-           sharedPref.clearData();
-           fNameET.setText("");
-           lNameET.setText("");
-           emailET.setText("");
-           passwordET.setText("");
-           Toast.makeText(MainActivity.this,"Data cleared",Toast.LENGTH_LONG).show();
+           Intent intent =new Intent(MainActivity.this,LoginActivity.class);
+           startActivity(intent);
        });
 
 

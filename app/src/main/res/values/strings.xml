@@ -6,7 +6,8 @@
     <string name="Enter_Cred">Enter Your Details Below</string>
     <string name="Email">Enter Email</string>
     <string name="Password">Enter Password</string>
-    <string name="Login">Already have an account?</string>
+    <string name="registered">Already have an account?</string>
+    <string name="not_registered">Dont have an account?</string>
     <string name="Login_Text">Login</string>
 
 </resources>
