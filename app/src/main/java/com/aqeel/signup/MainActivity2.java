@@ -21,4 +21,11 @@ public class MainActivity2 extends AppCompatActivity {
             return insets;
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finishAffinity();
+
+    }
 }

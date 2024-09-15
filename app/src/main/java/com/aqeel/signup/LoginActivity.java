@@ -1,7 +1,11 @@
 package com.aqeel.signup;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,15 +29,17 @@ public class LoginActivity extends AppCompatActivity {
         signUpBtn=findViewById(R.id.SignUP_btn_id);
         loginBtn=findViewById(R.id.login_btn_id);
         sharedPreference=new sharedPref(this);
+        Handler handler=new Handler();
 
-        loginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-              ModelUser modelUser=  sharedPreference.getData();
-              String email=modelUser.email;
-              String password=modelUser.password;
-              userAuth(email,password);
-            }
+        loginBtn.setOnClickListener(view -> {
+
+            ModelUser modelUser=  sharedPreference.getData();
+            String email=modelUser.email;
+            String password=modelUser.password;
+            userAuth(email,password);
+
+
+
         });
 
     }

@@ -33,6 +33,7 @@ android {
 
 dependencies {
     implementation("com.google.code.gson:gson:2.8.8")
+    implementation ("com.airbnb.android:lottie:6.5.2")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
